@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <style>
+    
+        #Contacto {
+            width:360px;
+            border:1px solid #ccc;
+            padding:10px;
+            margin: 0 auto;
+        }
+        
+        #Contacto input,
+        #Contacto textarea {
+            width:100%;
+            display: block;
+        }
+    
+    
+    </style>
+</head>
+<body>
+   <section>
+       <h1>Completá el siguiente formulario</h1>
+       
+       <form action="procesar_formulario.php" method="post" id="Contacto">      
+           <label for="cliente">
+               Nombre:
+           </label>
+           <input type="text" name="cliente" id="cliente" required>
+           <label for="correo">
+               Correo:
+           </label>
+           <input type="email" id="correo" name="correo" required>
+           <label for="consulta">
+               Consulta:
+           </label>
+           <textarea name="consulta" id="consulta" cols="30" rows="10" required minlength="120" maxlength="255"></textarea>
+           
+           <button type="submit">Enviar</button>
+           
+       </form>      
+   </section>
+    
+</body>
+</html>

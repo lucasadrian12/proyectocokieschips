@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider de comentarios</title>
+		
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<style>
+		h1 {
+			text-align: center;
+		}
+		.page {
+			width: 800px;
+			margin: auto;
+			padding: 0 0 350px 0;
+		}
+		blockquote {
+			padding: 60px;
+			text-align: center;
+			margin: 0;
+		}
+		blockquote p {
+			font: italic normal 18px/24px Georgia, serif;
+		}
+		blockquote p:last-child {
+			color: #666;
+			font-size: 15px;
+		}
+	</style>
+	
+</head>
+<body>
+	<h1>Lo que nuestros clientes dicen</h1>
+	<!-- wow.js en conjunto a animate.css, permite revelar animaciones a medida que se sucede el scroll. en la caja que se quiere definir ese comportamiento se declara como nombres de clases  "wow" y el nombre de la animacion, más los siguientes atributos optativos:
+	data-wow-duration, como la duración de la animación 
+	data-wow-delay, para establecer un retardo
+	data-wow-iteration, para agregar repeticiones
+	data-wow-offset, para definir la distancia desde el borde inferior del viewport que dispara la animación
+	-->
+	<div class="page">
+		<section>
+			<blockquote>
+				<p class="wow bounceIn" data-wow-duration="2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, officiis, eveniet, totam rem autem quas beatae eum iure aut delectus dolorum eius id consequatur quam iste sequi tempore et fuga!</p>
+				<p class="wow bounceInDown" data-wow-delay="3s"> Julio Verne</p>
+			</blockquote>
+			<blockquote>
+				<p class="wow fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, eaque at possimus blanditiis deleniti nesciunt excepturi fuga minus nulla quaerat beatae omnis dolore sint modi adipisci nam molestiae dolores consequatur?</p>
+				<p class="wow fadeInLeftBig">JRR Tolkien</p>
+			</blockquote>
+			<blockquote>
+				<p class="wow flip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, pariatur, tenetur harum placeat rem accusamus commodi eligendi adipisci dolores repellat ea dignissimos corporis explicabo quibusdam culpa illo itaque dolor et.</p>
+				<p class="wow flipInY" data-wow-duration="5s" data-wow-iteration="infinite">U Eco</p>
+			</blockquote>
+			<blockquote>
+				<p class="wow hinge" data-wow-offset="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, et, facere explicabo voluptatum repudiandae eligendi quisquam similique iste. Animi voluptas iste quibusdam vel similique sit soluta consectetur eligendi deleniti explicabo.</p>
+				<p class="wow rollIn" data-wow-offset="300">J. Cortázar</p>
+			</blockquote>
+		</section>
+	</div>
+	
+	
+	<!-- cargar el script del plugin-->	 
+	<script src="js/wow.js"></script>		
+	<!-- inicialización del plugin-->
+	<script>
+		new WOW().init();
+	</script>	
+	
+</body>
+</html>
